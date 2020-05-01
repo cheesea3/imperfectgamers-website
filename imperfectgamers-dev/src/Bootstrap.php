@@ -1,6 +1,5 @@
 <?php declare(strict_types = 1);
 
-
 namespace igmain;
 require __DIR__ . '/../vendor/autoload.php';
 use Symfony\Component\HttpFoundation\Request;
@@ -34,9 +33,19 @@ $request = new Request(
 );
 
 $response = new Response(
-    '<h1>Imperfect Gamers</h1>',
+    'Imperfect Gamers',
     Response::HTTP_OK,
     ['content-type' => 'text/html']
 );
+
+
+$routeDefinitionCallback = function (\FastRoute\RouteCollector $r) {
+    $routes = include('Routes.php');
+    foreach ($routes as $route) {
+        $r->addRoute($route[0], $route[1], $route[2]);
+    }
+};
+
+$dispatcher = \FastRoute\simpleDispatcher($routeDefinitionCallback);
 
 echo $response->getContent();
