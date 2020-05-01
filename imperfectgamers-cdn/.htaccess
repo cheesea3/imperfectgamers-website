@@ -1,0 +1,3 @@
+RewriteEngine on
+            RewriteCond %{HTTP_HOST} ^www\.cdn\.imperfectgamers\.org$
+            RewriteRule ^/?$ "https\:\/\/cdn\.imperfectgamers\.org\/" [R=301,L]

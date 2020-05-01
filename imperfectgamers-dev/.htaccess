@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^igfastdl.site.nfoservers.com [NC]
+RewriteRule ^(.*)$ http://www.imperfectgamers.org/$1 [L,R=302,NC]
+
+RewriteCond %{HTTP_HOST} ^imperfectgamers.org [NC]
+RewriteRule ^(.*)$ http://www.imperfectgamers.org/$1 [L,R=302,NC]
+Redirect /steam/ https://steamcommunity.com/groups/ImperfectGamersRAP/
+Redirect /discord/ https://discord.gg/yb524Ax
