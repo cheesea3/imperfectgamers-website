@@ -1,0 +1,21 @@
+{
+  "name": "imperfect/gamers",
+  "description": "Imperfect Gamers Site",
+  "keywords": ["imperfectgamers", "rap"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Daiyaan Ijaz",
+      "email": "daiyaan@imperfectgamers.org",
+      "role": "Owner / Main Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "igmain\\": "src/"
+    }
+  }
+}
