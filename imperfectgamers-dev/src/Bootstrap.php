@@ -1,8 +1,11 @@
 <?php declare(strict_types = 1);
 
-namespace igmain;
 
+namespace igmain;
 require __DIR__ . '/../vendor/autoload.php';
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+$request = Request::createFromGlobals();
 
 error_reporting(E_ALL);
 
@@ -21,4 +24,19 @@ if ($environment !== 'production') {
 }
 $whoops->register();
 
-throw new \Exception;
+$request = new Request(
+    $_GET,
+    $_POST,
+    [],
+    $_COOKIE,
+    $_FILES,
+    $_SERVER
+);
+
+$response = new Response(
+    '<h1>Imperfect Gamers</h1>',
+    Response::HTTP_OK,
+    ['content-type' => 'text/html']
+);
+
+echo $response->getContent();
