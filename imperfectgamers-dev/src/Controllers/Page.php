@@ -2,10 +2,10 @@
 
 namespace igmain\Controllers;
 
-use Http\Request;
 use Http\Response;
-use igmain\Page\PageReader;
+use igmain\Page\InvalidPageException;
 use igmain\Template\Renderer;
+use igmain\Page\PageReader;
 
 class Page
 {
@@ -17,7 +17,7 @@ class Page
         Response $response,
         Renderer $renderer,
         PageReader $pageReader
-){
+    ) {
         $this->response = $response;
         $this->renderer = $renderer;
         $this->pageReader = $pageReader;
@@ -26,7 +26,14 @@ class Page
     public function show($params)
     {
         $slug = $params['slug'];
-        $data['content'] = $this->pageReader->readBySlug($slug);
+
+        try {
+            $data['content'] = $this->pageReader->readBySlug($slug);
+        } catch (InvalidPageException $e) {
+            $this->response->setStatusCode(404);
+            return $this->response->setContent('404 - Page not found');
+        }
+
         $html = $this->renderer->render('Page', $data);
         $this->response->setContent($html);
     }
