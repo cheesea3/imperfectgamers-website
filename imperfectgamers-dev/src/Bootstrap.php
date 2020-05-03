@@ -1,10 +1,8 @@
 <?php declare(strict_types = 1);
 
 namespace igmain;
+
 require __DIR__ . '/../vendor/autoload.php';
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
-$request = Request::createFromGlobals();
 
 error_reporting(E_ALL);
 
@@ -23,21 +21,10 @@ if ($environment !== 'production') {
 }
 $whoops->register();
 
-$request = new Request(
-    $_GET,
-    $_POST,
-    [],
-    $_COOKIE,
-    $_FILES,
-    $_SERVER
-);
+$injector = include('Dependencies.php');
 
-$response = new Response(
-    'Imperfect Gamers',
-    Response::HTTP_OK,
-    ['content-type' => 'text/html']
-);
-
+$request = $injector->make('Http\HttpRequest');
+$response = $injector->make('Http\HttpResponse');
 
 $routeDefinitionCallback = function (\FastRoute\RouteCollector $r) {
     $routes = include('Routes.php');
@@ -47,5 +34,22 @@ $routeDefinitionCallback = function (\FastRoute\RouteCollector $r) {
 };
 
 $dispatcher = \FastRoute\simpleDispatcher($routeDefinitionCallback);
+
+$routeInfo = $dispatcher->dispatch($request->getMethod(), $request->getPath());
+switch ($routeInfo[0]) {
+    case \FastRoute\Dispatcher::FOUND:
+        $className = $routeInfo[1][0];
+        $method = $routeInfo[1][1];
+        $vars = $routeInfo[2];
+
+        $class = $injector->make($className);
+        $class->$method($vars);
+        break;
+}
+
+
+foreach ($response->getHeaders() as $header) {
+    header($header, false);
+}
 
 echo $response->getContent();
