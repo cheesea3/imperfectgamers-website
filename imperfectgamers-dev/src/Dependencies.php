@@ -23,6 +23,12 @@ $injector->define('Mustache_Engine', [
         ]),
     ],
 ]);
+$injector->define('igmain\Page\FilePageReader', [
+    ':pageFolder' => __DIR__ . '/../pages',
+]);
+
+$injector->alias('igmain\Page\PageReader', 'igmain\Page\FilePageReader');
+$injector->share('igmain\Page\FilePageReader');
 
 return $injector;
 

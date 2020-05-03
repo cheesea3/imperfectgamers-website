@@ -2,4 +2,5 @@
 
 return [
     ['GET', '/', ['igmain\Controllers\Homepage', 'show']],
+    ['GET', '/{slug}', ['igmain\Controllers\Page', 'show']],
 ];
