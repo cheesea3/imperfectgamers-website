@@ -2,9 +2,9 @@
 
 namespace igmain\Controllers;
 
+use igmain\Template\FrontendRenderer;
 use Http\Request;
 use Http\Response;
-use igmain\Template\Renderer;
 
 class Homepage
 {
@@ -15,7 +15,7 @@ class Homepage
     public function __construct(
         Request $request,
         Response $response,
-        Renderer $renderer
+        FrontendRenderer $renderer
     ) {
         $this->request = $request;
         $this->response = $response;
@@ -26,7 +26,6 @@ class Homepage
     {
         $data = [
             'name' => $this->request->getParameter('name', 'stranger'),
-            'menuItems' => [['href' => '/', 'text' => 'Homepage']],
         ];
         $html = $this->renderer->render('Homepage', $data);
         $this->response->setContent($html);

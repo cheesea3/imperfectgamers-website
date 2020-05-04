@@ -28,12 +28,14 @@ $injector->define('igmain\Page\FilePageReader', [
 ]);
 
 $injector->alias('igmain\Page\PageReader', 'igmain\Page\FilePageReader');
+$injector->alias('igmain\Template\FrontendRenderer', 'igmain\Template\FrontendTwigRenderer');
 $injector->share('igmain\Page\FilePageReader');
 $injector->delegate('\Twig\Environment', function () use ($injector) {
     $loader = new \Twig\Loader\FilesystemLoader(dirname(__DIR__) . '/templates');
     $twig = new \Twig\Environment($loader);
     return $twig;
 });
-
+$injector->alias('igmain\Menu\MenuReader', 'igmain\Menu\ArrayMenuReader');
+$injector->share('igmain\Menu\ArrayMenuReader');
 return $injector;
 

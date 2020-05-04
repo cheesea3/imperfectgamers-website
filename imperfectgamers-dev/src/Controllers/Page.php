@@ -4,7 +4,7 @@ namespace igmain\Controllers;
 
 use Http\Response;
 use igmain\Page\InvalidPageException;
-use igmain\Template\Renderer;
+use igmain\Template\FrontendRenderer;
 use igmain\Page\PageReader;
 
 class Page
@@ -15,7 +15,7 @@ class Page
 
     public function __construct(
         Response $response,
-        Renderer $renderer,
+        FrontendRenderer $renderer,
         PageReader $pageReader
     ) {
         $this->response = $response;
