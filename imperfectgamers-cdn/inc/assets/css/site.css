@@ -3886,7 +3886,7 @@ i.mce-i-resize {
 
 @font-face {
     font-family: 'tinymce';
-    src: url('../../fonts/tinymce.ttf');
+    src: url("https://cdn.imperfectgamers.org/inc/assets/fonts/tinymce.ttf");
     font-weight: normal;
     font-style: normal
 }
@@ -14066,7 +14066,7 @@ h3 {
 
 @font-face {
   font-family: BebasNeue;
-  src: url("../../fonts/BebasNeue.ttf");
+  src: url("https://cdn.imperfectgamers.org/inc/assets/fonts/BebasNeue.ttf");
 }
 .header {
   width: 100%;
@@ -14332,7 +14332,7 @@ h6 {
   width: auto;
   text-align: center;
   color: #FFF;
-  background-color: darkgreen;
+  background-color: ff3535;
   font-weight: bold;
 }
 
