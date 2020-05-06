@@ -1,0 +1,108 @@
+
+/* Thanks To The Internet, 70% of these assets aren't hand-made */
+
+/* HTML5 display-role reset for older browsers (Maybe IE, but seriously? why?) */
+
+
+@media (max-width:767px){
+}
+.c-btn{display:inline-block;position:relative;overflow:hidden;}
+.c-btn.type-1{font-size:16px;line-height:20px;font-weight:700;color:#fff;background:#ff3535;border:1px solid #ff4242;padding:17px 53px;-moz-border-radius:5px;border-radius:5px;opacity:1;-webkit-box-shadow:0px 4px 0px 0px #68994f;-moz-box-shadow:0px 4px 0px 0px #68994f;box-shadow:0px 4px 0px 0px #9c2121;-webkit-transition:opacity 300ms ease-in-out;-moz-transition:opacity 300ms ease-in-out;transition:opacity 300ms ease-in-out;}
+.c-btn.type-1:active{top:1px;-webkit-box-shadow:0px 1px 0px 0px #b82727;-moz-box-shadow:0px 1px 0px 0px #b82727;box-shadow:0px 1px 0px 0px #b82727;}
+.c-btn.type-1:hover{
+    opacity: 0.6;
+    vertical-align: middle;
+}
+.c-btn.type-1.size-2{font-size:14px;line-height:18px;font-weight:700;padding:14px 63px 13px 63px;}
+.c-btn.type-1.size-3{padding:19px 135px;}
+.c-btn.type-1.size-4{font-size:18px;line-height:22px;padding:21px 53px;}
+.c-btn.type-1.color-2{background:#ef662f;border-color:#f28053;-webkit-box-shadow:0px 4px 0px 0px #d15625;-moz-box-shadow:0px 4px 0px 0px #d15625;box-shadow:0px 4px 0px 0px #d15625;}
+.c-btn.type-1.color-2:active{-webkit-box-shadow:0px 1px 0px 0px #d15625;-moz-box-shadow:0px 1px 0px 0px #d15625;box-shadow:0px 1px 0px 0px #d15625;}
+@media (max-width:767px){
+    .c-btn.type-1{width:100%;text-align:center;}
+    .c-btn.type-1.size-3{padding-left:15px;padding-right:15px;}
+}
+.c-btn.type-2{font-size:14px;line-height:18px;font-weight:700;color:#7ab55c;border:2px solid #7ab55c;-moz-border-radius:5px;border-radius:5px;-webkit-transform:translateZ(0);-moz-transform:translateZ(0);transform:translateZ(0);}
+.c-btn.type-2 span,.c-btn.type-2 input{display:inline-block;padding:8px 29px 7px 29px;}
+.c-btn.type-2:before{content:'';display:block;position:absolute;top:0;left:0;bottom:0;width:0;background:#ff3535;z-index:-1;-webkit-transition:all 300ms ease-in-out;-moz-transition:all 300ms ease-in-out;transition:all 300ms ease-in-out;}
+.c-btn.type-2:after{content:'';display:block;position:absolute;top:0;right:0;bottom:0;width:0;background:#ff3535;z-index:-1;-webkit-transition:all 300ms ease-in-out;-moz-transition:all 300ms ease-in-out;transition:all 300ms ease-in-out;}
+.c-btn.type-2 input{background:transparent;border:0;font-size:inherit;line-height:inherit;text-transform:inherit;letter-spacing:inherit;font-weight:inherit;}
+.c-btn.type-2:hover{color:#fff;}
+.c-btn.type-2:hover:before,.c-btn.type-2:hover:after{width:51%;}
+.c-btn.type-2.size-2 span,.c-btn.type-2.size-2 input{padding:15px 54px 14px 54px;}
+.c-btn.type-2.color-2{background:#ff3535;color:#fff;}
+.c-btn.type-2.color-2:before,.c-btn.type-2.color-2:after{background:#fff;}
+.c-btn.type-2.color-2:hover{color:#ff3535;}
+.c-btn.type-2.color-3{border-color:#ff3535;color:#ff3535;}
+.c-btn.type-2.color-3:before,.c-btn.type-2.color-3:after{background:#ef662f;}
+.c-btn.type-2.color-3:hover{color:#fff;}
+.c-btn.type-2.color-4{background:#ff3535;border-color:#ff3535;color:#fff;}
+.c-btn.type-2.color-4:before,.c-btn.type-2.color-4:after{background:#fff;}
+.c-btn.type-2.color-4:hover{color:#ff3535;}
+.c-btn.type-2.color-5{border-color:rgba(255,255,255,0.6);color:rgba(255,255,255,0.6);}
+.c-btn.type-2.color-5:before,.c-btn.type-2.color-5:after{background:#fff;}
+.c-btn.type-2.color-5:hover{color:#000;}
+.c-btn.type-2.color-6{background:rgba(255,255,255,0.6);color:#000;border-color:rgba(255,255,255,0.6);}
+.c-btn.type-2.color-6:before,.c-btn.type-2.color-6:after{background:#fff;}
+.c-btn.type-2.radius-0{-moz-border-radius:0;border-radius:0;}
+
+@media (max-width:1199px){
+    .pleft75{padding-left:0;}
+}
+.card {
+}
+button:hover, a:hover {
+    opacity: 0.7;
+}
+#loader-wrapper{background-color:#fff;height:100%;width:100%;position:fixed;z-index:200;margin-top:0px;top:0px;}
+#loading-text{position:absolute;left:50%;top:50%;margin-top:45px;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);font-size:16px;line-height:22px;font-weight:700;color:#222;}
+#loader{position:absolute;top:50%;left:50%;width:30px;height:30px;margin-top:-15px;margin-left:-15px;border:4px solid #7ab55c;-webkit-animation:loader 2s infinite ease;-moz-animation:loader 2s infinite ease;animation:loader 2s infinite ease;}
+#loader span{vertical-align:top;display:inline-block;width:100%;background-color:#7ab55c;-webkit-animation:loader-inner 2s infinite ease-in;-moz-animation:loader-inner 2s infinite ease-in;animation:loader-inner 2s infinite ease-in;}
+@-webkit-keyframes loader{
+    0%{-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+    25%{-webkit-transform:rotate(180deg);transform:rotate(180deg);}
+    50%{-webkit-transform:rotate(180deg);transform:rotate(180deg);}
+    75%{-webkit-transform:rotate(360deg);transform:rotate(360deg);}
+    100%{-webkit-transform:rotate(360deg);transform:rotate(360deg);}
+}
+@-moz-keyframes loader{
+    0%{-moz-transform:rotate(0deg);transform:rotate(0deg);}
+    25%{-moz-transform:rotate(180deg);transform:rotate(180deg);}
+    50%{-moz-transform:rotate(180deg);transform:rotate(180deg);}
+    75%{-moz-transform:rotate(360deg);transform:rotate(360deg);}
+    100%{-moz-transform:rotate(360deg);transform:rotate(360deg);}
+}
+@keyframes loader{
+    0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);transform:rotate(0deg);}
+    25%{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);transform:rotate(180deg);}
+    50%{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);transform:rotate(180deg);}
+    75%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);transform:rotate(360deg);}
+    100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);transform:rotate(360deg);}
+}
+@-webkit-keyframes loader-inner{
+    0%{height:0%;}
+    25%{height:0%;}
+    50%{height:100%;}
+    75%{height:100%;}
+    100%{height:0%;}
+}
+@-moz-keyframes loader-inner{
+    0%{height:0%;}
+    25%{height:0%;}
+    50%{height:100%;}
+    75%{height:100%;}
+    100%{height:0%;}
+}
+@keyframes loader-inner{
+    0%{height:0%;}
+    25%{height:0%;}
+    50%{height:100%;}
+    75%{height:100%;}
+    100%{height:0%;}
+}
+
+
+
+
+
+
