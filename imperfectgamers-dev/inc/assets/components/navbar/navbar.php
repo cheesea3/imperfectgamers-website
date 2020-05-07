@@ -6,19 +6,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarsExample07">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item <?php if ($CURRENT_PAGE == "Index") {?>active<?php }?>">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?php if ($CURRENT_PAGE == "Records") {?>active<?php }?>">
                     <a class="nav-link" href="#">Records</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?php if ($CURRENT_PAGE == "Activity") {?>active<?php }?>">
                 <a class="nav-link" href="#">Activity</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?php if ($CURRENT_PAGE == "Bans") {?>active<?php }?>">
                 <a class="nav-link" href="#">Bans</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?php if ($CURRENT_PAGE == "Store") {?>active<?php }?>">
                 <a class="nav-link" href="#">Store</a>
                 </li>
             </ul>

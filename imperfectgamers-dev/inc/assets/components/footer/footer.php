@@ -46,7 +46,7 @@
             <p style="color: gray"><a href="abc.html"
                                       onMouseOver="this.style.color='#gray'"
                                       onMouseOut="this.style.color='#gray'" >Imperfect Gamers</a> is a service of Imperfect and Company, LLC.</p>
-            <p class="h6">Copyright 2020 ©<a class="ml-2" href="https://imperfectcreators.org/" target="_blank">Imperfect and Company</a> All right Reversed.<a class="ml-2" style="color: white" href="https://imperfectcreators.org/" target="_blank">Privacy Policy</a></p>
+            <p class="h6"><a class="ml-2" href="https://imperfectcreators.org/" target="_blank">Imperfect and Company</a>  Copyright &copy; <?php print date("Y");?>. All right Reversed.<a class="ml-2" style="color: white" href="https://imperfectcreators.org/" target="_blank">Privacy Policy</a></p>
         </div>
     </div>
 </div>
