@@ -1,10 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-ig">
-    <div class="container">
-        <a class="navbar-brand" href="/"><img src="https://cdn.imperfectgamers.org/inc/assets/img/altlogo.png" width="48px" height="48px"/></a>
+    <div class="container" style="user-select: none">
+        <a class="navbar-brand" href="/"><object data="https://cdn.imperfectgamers.org/inc/assets/img/logo.svg" alt="Imperfect Gamers Brand Logo" type="image/svg+xml" height="48px" width="48px"></object></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarsExample07">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
