@@ -1,12 +1,15 @@
-<?php include("Classes/config.php");?>
+<?php include("Config/config.php");?>
 <html lang="en">
 <head>
-<?php include("inc/assets/components/cdn/main.php"); ?>
+<?php include("Resources/assets/inc/head.php"); ?>
 </head>
 <body class="ImperfectGamers" id="active">
 
 <div class="ImperfectGamers-header">
-<header><?php include("inc/assets/components/header/header.php"); ?></header>
+<header>
+    <?php include("Resources/assets/components/header/header.php"); ?>
+    <?php include("Resources/assets/components/navbar/navbar.php"); ?>
+</header>
 </div>
 
 
@@ -26,10 +29,10 @@
 </div>
 
 <footer class="ImperfectGamers-footer">
-<?php include("inc/assets/components/footer/footer.php"); ?>
+<?php include("Resources/assets/components/footer/footer.php"); ?>
 </footer>
 
-<?php include("inc/assets/components/footer/includes.php"); ?>
+<?php include("Resources/assets/components/footer/includes.php"); ?>
 
 </body>
 </html>

@@ -6,6 +6,6 @@
         </div>
     </div>
     <?php
-    include("inc/assets/components/navbar/navbar.php");
+    include("Resources/assets/components/navbar/navbar.php");
     ?>
 </header>

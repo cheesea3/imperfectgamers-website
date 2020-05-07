@@ -2,7 +2,7 @@
 <head>
 <?php
 $path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/inc/assets/components/cdn/main.php";
+$path .= "/Resources/assets/components/cdn/home-view.php";
 include_once($path);
 ?>
 </head>
