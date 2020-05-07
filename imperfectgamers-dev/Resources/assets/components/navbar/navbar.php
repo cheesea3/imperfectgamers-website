@@ -7,19 +7,19 @@
         <div class="collapse navbar-collapse" id="navbarsExample07">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item <?php if ($CURRENT_PAGE == "Index") {?>active<?php }?>">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item <?php if ($CURRENT_PAGE == "Records") {?>active<?php }?>">
-                    <a class="nav-link" href="#">Records</a>
+                    <a class="nav-link" href="/records">Records</a>
                 </li>
                 <li class="nav-item <?php if ($CURRENT_PAGE == "Activity") {?>active<?php }?>">
-                <a class="nav-link" href="#">Activity</a>
+                <a class="nav-link" href="/activity">Activity</a>
                 </li>
                 <li class="nav-item <?php if ($CURRENT_PAGE == "Bans") {?>active<?php }?>">
-                <a class="nav-link" href="#">Bans</a>
+                <a class="nav-link" href="/bans">Bans</a>
                 </li>
                 <li class="nav-item <?php if ($CURRENT_PAGE == "Store") {?>active<?php }?>">
-                <a class="nav-link" href="#">Store</a>
+                <a class="nav-link" href="/store">Store</a>
                 </li>
             </ul>
             <ul class="nav justify-content-end">
