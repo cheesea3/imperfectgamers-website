@@ -16,7 +16,6 @@ include_once($path);
     ?>
 </head>
 <body class="ImperfectGamers" id="active">
-
 <div class="ImperfectGamers-header">
     <header>
         <!--HEADER-->
@@ -32,8 +31,13 @@ include_once($path);
         $path .= "/resources/assets/components/navbar/navbar.php";
         include_once($path);
         ?>
+
+        <!-INDEX VIDEO->
+
+
     </header>
 </div>
+
 
 
 <div class="ImperfectGamers-body">
@@ -52,24 +56,10 @@ include_once($path);
 
 
 
-    <nav class="ImperfectGamers-nav"><ul class="nav flex-column">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-        </ul></nav>
-
+    <nav class="ImperfectGamers-nav"><!--empty--></nav>
     <aside class="ImperfectGamers-news"><!--empty--></aside>
 </div>
-
+<a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
 <footer class="ImperfectGamers-footer">
     <!--FOOTER-->
     <?php
@@ -85,6 +75,7 @@ $path = $_SERVER['DOCUMENT_ROOT'];
 $path .= "/resources/assets/components/footer/includes.php";
 include_once($path);
 ?>
+
 <script src="https://cdn.imperfectgamers.org/inc/assets/js/instload.js"></script>
 </body>
 </html>

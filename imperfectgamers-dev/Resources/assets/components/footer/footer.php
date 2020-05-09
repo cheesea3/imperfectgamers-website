@@ -57,9 +57,10 @@
         <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
             <p style="color: gray"><a href="/"
                                       onMouseOver="this.style.color='#gray'"
-                                      onMouseOut="this.style.color='#gray'" >Imperfect Gamers</a> is a service of Imperfect and Company, LLC.</p>
-            <p class="h6"><a class="ml-2" href="https://imperfectcreators.org/" target="_blank">Imperfect and Company</a>  Copyright &copy; <?php print date("Y");?>. All right Reversed.<a class="ml-2" style="color: white" href="https://imperfectcreators.org/" target="_blank">Privacy Policy</a></p>
+                                      onMouseOut="this.style.color='#gray'" >Imperfect Gamers</a> is a service of Imperfect and Company</p>
+            <p class="h6"><a class="ml-2" href="/">Imperfect and Company</a>  &copy; <?php print date("Y");?>. All right Reversed.<a class="ml-2" style="color: white" href="https://imperfectcreators.org/" target="_blank">Privacy Policy</a></p>
         </div>
     </div>
 </div>
+<script src="https://cdn.imperfectgamers.org/inc/assets/js/instload.js"></script>
 <!-- /Footer -->
