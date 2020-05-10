@@ -177,7 +177,7 @@
 	}
 	.ImperfectGamers-content {
 		flex: 1;
-		background-color: #262b2b;
+		background-color: #212323;
 		color: white;
 	}
 	.ImperfectGamers-nav, .ImperfectGamers-news {
@@ -190,12 +190,12 @@
 		width: 100%;
 		padding: 30px 0;
 		overflow: hidden;
-		background-color: #212323;
+		background-color: #262b2b;
 		text-align: center;
 		text-transform: uppercase;
 	}
 	.ImperfectGamers-footer a {
-		color: #ff3535;
+		color: #FFB7B6;
 		text-decoration: none !important;
 		background-color: transparent;
 		-webkit-text-decoration-skip: objects;
@@ -2929,40 +2929,40 @@ fieldset:disabled a.btn {
 
 .btn-primary {
 	color: #fff;
-	background-color: #007bff;
-	border-color: #007bff
+	background-color: #ff3535;
+	border-color: #ff3535
 }
 
 .btn-primary:hover {
 	color: #fff;
-	background-color: #0069d9;
-	border-color: #0062cc
+	background-color: #ef3232;
+	border-color: #ef3232
 }
 
 .btn-primary.focus,
 .btn-primary:focus {
-	box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5)
+	box-shadow: 0 0 0 .2rem rgba(239, 50, 50, .5)
 }
 
 .btn-primary.disabled,
 .btn-primary:disabled {
 	color: #fff;
-	background-color: #007bff;
-	border-color: #007bff
+	background-color: #ef3232;
+	border-color: #ef3232
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
 	color: #fff;
-	background-color: #0062cc;
-	border-color: #005cbf
+	background-color: #ef3232;
+	border-color: #ef3232
 }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
-	box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5)
+	box-shadow: 0 0 0 .2rem rgba(239, 50, 50, 1)
 }
 
 .btn-secondary {
@@ -5744,8 +5744,8 @@ tbody.collapse.show {
 .list-group-item.active {
 	z-index: 2;
 	color: #fff;
-	background-color: #007bff;
-	border-color: #007bff
+	background-color: #ef3232;
+	border-color: #ef3232
 }
 
 .list-group-flush .list-group-item {

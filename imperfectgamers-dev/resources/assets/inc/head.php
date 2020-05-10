@@ -1,12 +1,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <?php if ($CURRENT_PAGE == "Index") { ?>
-        <meta name="description" content="" />
-        <meta name="keywords" content="How do I go live on Facebook?" />
-    <?php } ?>
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="<?php print$META_DESC;?>" />
+    <meta name="keywords" content="<?php print $META_WORDS;?>" />
 
     <title><?php print $PAGE_TITLE;?></title>
 

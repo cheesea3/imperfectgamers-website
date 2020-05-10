@@ -2,38 +2,38 @@
 switch ($_SERVER["SCRIPT_NAME"]) {
     case "/records/index.php":
         $CURRENT_PAGE = "Records";
-        $PAGE_TITLE = "Records";
+        $PAGE_TITLE = "Records Center";
         $INCLUDE_PATH = "/views/records-view.php";
-        $META_DESC = "The new age underground scene for rapping, producing, gami=";
-        $META_WORDS = "TEST";
+        $META_DESC = "The Records Center allows you to see where you stand against others in various ways.";
+        $META_WORDS = "records, stats, times, maps, surf_kitsune, surf_mesa, surf_calycate_ig, imperfectgamersfastdl, maps";
         break;
     case "/activity/index.php":
         $CURRENT_PAGE = "Activity";
-        $PAGE_TITLE = "Activity";
+        $PAGE_TITLE = "Activity Center";
         $INCLUDE_PATH = "/views/activity-view.php";
-        $META_DESC = "TEST";
-        $META_WORDS = "TEST";
+        $META_DESC = "Track your in-game activity, see where you stand amongst others.";
+        $META_WORDS = "activity, Name, SteamID, SteamID64, daaag runi, yamo, home, search, Days, Hrs, Min";
         break;
     case "/bans/index.php":
         $CURRENT_PAGE = "Bans";
-        $PAGE_TITLE = "Bans";
+        $PAGE_TITLE = "Bans Center";
         $INCLUDE_PATH = "/views/bans-view.php";
-        $META_DESC = "TEST";
-        $META_WORDS = "TEST";
+        $META_DESC = "The Bans Center gives immediate information necessary for resolving account limitations";
+        $META_WORDS = "banned, for, hardr, fbomb, help, micspam, banned, how to get unbanned, ipbanned, unban, appeal, information";
         break;
     case "/store/index.php":
         $CURRENT_PAGE = "Store";
-        $PAGE_TITLE = "Store";
+        $PAGE_TITLE = "Store Center";
         $INCLUDE_PATH = "/views/store-view.php";
-        $META_DESC = "TEST";
-        $META_WORDS = "TEST";
+        $META_DESC = "Subscribing to VIP grants you exclusive features while helping us to stay free from intruding advertisements that most servers have.";
+        $META_WORDS = "donate, subscribe, donate, vip, vote mute, vote extend, ve, vmute, !vmute, !ve, !vip, sm_vip, sm_ve, sm_vmute";
         break;
     case "/404/index.php":
         $CURRENT_PAGE = "404";
         $PAGE_TITLE = "Page Not Found";
         $INCLUDE_PATH = "/views/404-view.php";
         $META_DESC = "Page not found";
-        $META_WORDS = "TEST";
+        $META_WORDS = "404, page not found, lost";
         break;
     default:
         $CURRENT_PAGE = "Index";
