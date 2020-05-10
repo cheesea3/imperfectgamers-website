@@ -9,6 +9,12 @@ if(isset($_SERVER['HTTP_REFERER']) && !empty($_SERVER['HTTP_REFERER'])){
     }
 }
 else{
-    echo "404 ";
+    echo "404
+
+";
+
 }
+
+
+
 ?>

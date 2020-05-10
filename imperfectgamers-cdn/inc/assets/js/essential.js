@@ -31927,7 +31927,7 @@ var widgetsSlider = $.widget( "ui.slider", $.ui.mouse, {
 		stop: null
 	},
 
-	// Number of Config in a slider
+	// Number of config in a slider
 	// (how many times can you page up/down to go through the whole range)
 	numPages: 5,
 

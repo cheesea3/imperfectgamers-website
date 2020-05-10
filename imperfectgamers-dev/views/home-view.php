@@ -1,17 +1,19 @@
-<!-- ALERT -->
-<?php
-$path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/resources/assets/components/elements/infotool.php";
-include_once($path);
-?>
-<?php if ($CURRENT_PAGE == "Index") {
-    $path = $_SERVER['DOCUMENT_ROOT'];
-    $path .= "/resources/assets/components/elements/video.php";
-    include_once($path);
-}
-?>
 <main class="Site-content">
+    <!-- ALERT -->
+    <?php
+    $path = $_SERVER['DOCUMENT_ROOT'];
+    $path .= "/resources/assets/components/elements/infotool.php";
+    include_once($path);
+    ?>
+    <!-- VIDEO -->
+    <?php if ($CURRENT_PAGE == "Index") {
+        $path = $_SERVER['DOCUMENT_ROOT'];
+        $path .= "/resources/assets/components/elements/video.php";
+        include_once($path);
+    }
+    ?>
     <section class="my-5">
+
         <div class="container">
             <div class="row">
                 <div class="col-md-8 mx-auto">
