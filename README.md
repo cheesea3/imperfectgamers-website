@@ -45,10 +45,11 @@ To ensure thorough vetting and successful completion, the IGWS Project has adopt
 
 ## Constraints
 Several constraints have been identified for the IGWS Project. Considerations must be made for these constraints throughout the project lifecycle. All owners of Imperfect Gamers must remain mindful of these constraints as they must be carefully thought for to prevent any adverse consequences to the project's schedule, cost, or scope. 
-The following constraints have been identified:
-The project must be completed the 29th of May, 2020.
-Website must conform to existing web-applications (SourceBans, PromtheusIPN, and MyBB) as no new software will be adopted for usage.
-Project must be completed within budget tolerance.
+
+**The following constraints have been identified:**
+1. The project must be completed the 29th of May, 2020.
+2. Website must conform to existing web-applications (SourceBans, PromtheusIPN, and MyBB) as no new software will be adopted for usage.
+3. Project must be completed within budget tolerance.
 
 ## Assumptions
 Several assumptions have been identified for the IGWS Project. Considerations must be made for these assumptions as they introduce some level of risk to the project until they're confirmed to be true.
