@@ -2,7 +2,6 @@
 
 SESSION_START();
 
-ob_start();
 
 $page = 'home';
 $page_title = 'Home';
@@ -18,6 +17,8 @@ if(isset($_GET['newlicense'])) {
         cache::clear();
     }
 }
+
+util::redirect('splash.php');
 
 if (!prometheus::loggedin())
     include('inc/login.php');
@@ -41,10 +42,10 @@ ob_end_clean();
 <?php include('inc/header.php'); ?>
 
 <?php if (getSetting('installed', 'value2') == 1) { ?>
-    <div class="content mb-5">
+    <div class="content">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-xs-12">
                     <?php if (isset($_GET['installed']) && $_GET['installed'] == true) { ?>
                         <p class="bs-callout bs-callout-success">
                             <button type="button" class="close" data-dismiss="alert">×</button>
@@ -54,29 +55,47 @@ ob_end_clean();
                     <?php } ?>
                 </div>
             </div>
+			
+			        <div class="row animated bounceIn">
+                <div class="col-md-4">
+                    <div class="card card-splash card-balance">
+                        <div class="icon">
+                            <i class="fa fa-microphone" style="font-size:64px; color: #0275d8;"></i>
+                        </div>
+                        <div class="card-content">
+                            <h4 class="card-title">Yeet </h4>
+                            <p class="card-description"> YEET2 </p>
+                        </div>
+                    </div>
+                    <div class="card-link-footer">
+                        <a href="https://google.com"> YEET3 </a>
+                    </div>
+                </div>
+        </div>
+			
             <div class="row">
                 <?php
 
                 include('inc/news.php');
 
                 ?>
-                <div class="col-12 col-md-<?= $news_width; ?>">
+                <div class="col-xs-<?= $news_width; ?>">
 
                     <?php if (!prometheus::loggedin()) { ?>
-                        <div class="header mb-4">
+                        <div class="header">
                             <?= lang('signin', 'Sign in'); ?>
                         </div>
                         <?= lang('welcome_signin', 'You need to sign in first in order to buy any packages'); ?><br><br>
-                        <?php echo '<a href="' . SteamSignIn::genUrl() . '"><img src="//steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_large_noborder.png"></img></a>'; ?>
+                        <?php echo '<a href="' . SteamSignIn::genUrl() . '"><img src="https://www.imperfectgamers.org/store/img/sits_large_noborder.png"></img></a>'; ?>
                         <br><br>
                     <?php } ?>
 
-                    <div class="header mb-4">
+                    <div class="header">
                         <?= lang('welcome_main', 'welcome'); ?>
                     </div>
 
                     <?php if (getSetting('enable_goal', 'value2') == 1) { ?>
-                        <div class="donationGoal mb-4">
+                        <div class="donationGoal">
                             <?php
                             $goal = goal::get();
                             ?>

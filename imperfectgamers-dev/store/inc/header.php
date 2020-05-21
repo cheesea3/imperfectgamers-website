@@ -16,7 +16,7 @@
 	include 'lib/mix.php';
 
 ?>
-
+<?php include('ig_config.php');?>
 <!DOCTYPE html>
 <html lang="en" dir="<?= $dir; ?>">
 	<head>
@@ -29,7 +29,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 
-		<link rel="stylesheet" type="text/css" href="compiled/css/site.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.imperfectgamers.org/inc/assets/css/sitev2.css">
 
 		<?php
 
