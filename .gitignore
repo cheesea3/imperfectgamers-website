@@ -21,3 +21,4 @@ imperfectgamers-dev/store/inc/*/
 imperfectgamers-dev/store/inc/classes/*/
 #but don't ignore "imperfectgamers/store/inc/classes/dashboard.class.php"
 !imperfectgamers-dev/store/inc/classes/dashboard.class.php/
+/imperfectgamers-dev/store/
