@@ -612,11 +612,15 @@ class dashboard
                     $uid = $row['uid'];
                     $p_name = $db->getOne("SELECT title FROM packages WHERE id = ?", $pid);
                     $currency = $row['currency'];
-
                     if (prometheus::isAdmin())
                         $link = 'admin.php?page=users&id=' . $id;
                     else
                         $link = 'http://steamcommunity.com/profiles/' . $uid . '/';
+                    $pavatar = file_get_contents('http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=IFUARESNOOPINGTOLEARNPMIWILLTEACHBUTDONTSTEALMYKEY&steamids=' . $uid . '/');
+                    // defines pavatar variable for json information uid fills in steam id in steam api
+                    $json = json_decode($pavatar, false);  // decodes the json information from pavatar, second parameter keeps it an object
+                    $pavatar = $json->response->players; //looks at the json array. response -> players
+
 
                     if (empty($name))
                         $name = 'Unnamed';
@@ -638,18 +642,34 @@ class dashboard
                     }
 
                     $timestamp = $row['timestamp'];
-
                     $ret .= '
-                            <tr>
-                                <td><a href="' . $link . '" target="_blank">' . $name . '</a></td>
-                                <td>' . $p_name . '</td>
-                                <td>' . $amount . '</td>
-                                <td>' . $timestamp . '</td>
-                            </tr>
+					<center>
+					            <div class="col-md-4">
+                <div class="card card-splash">
+								<div class="infoele" align="right">
+                           <a href="' . $link . '" target="_blank"><button class="btn"><i class="fa fa-steam-square" style="font-size:18px;"></i></button></a>
+                </div>
+                    <div class="card-content">
+                        <h4 class="card-description"> <img src="' . $pavatar[0]->avatarmedium . '" class="avatar"> </h4>
+						<br>
+                        <p class="card-title">' . $name . '</p>
+						 <p>' . $timestamp . '</p>
+                    </div>
+					                  
+                </div>
+				   <div class="card-link-footer">
+		<br>
+										  <p> VIP </p>
+										  		   <br>
+										  </div>
+            </div>
+			</center>
                         ';
                 }
+                //$pavatar initially was response->players. used [0] to access the array elements and then ->avatar added to access attribute.
             } else {
                 $ret = '
+
                         <tr>
                             <td>' . lang('recent_none', 'There has not been any recent donators') . '</td>
                             <td></td>
@@ -691,7 +711,7 @@ class dashboard
                     $uid = $row['uid'];
                     $total = round($row['total'], 2);
 
-                    if (empty($name))
+                    if(empty($name))
                         $name = 'Unnamed';
 
                     if (prometheus::isAdmin())
