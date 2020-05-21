@@ -1,4 +1,6 @@
 
+
+
 <?php
 $path = $_SERVER['DOCUMENT_ROOT'];
 $path .= "/resources/assets/classes/masterpage.php";

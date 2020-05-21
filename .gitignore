@@ -4,3 +4,20 @@ imperfectgamers-dev/vendor
 /imperfectgamers-dev/bans/
 /imperfectgamers-dev/bans/demos/
 /imperfectgamers-dev/bans/
+/imperfectgamers/root/bans/
+# Ignore everything under "Store"
+/imperfectgamers-dev/store/*
+#but don't ignore "imperfectgamers/store/index.php"
+!/imperfectgamers-dev/store/index.php/
+#but make sure config.php is ignored
+!/imperfectgamers-dev/store/config.php/
+# But don't ignore "store/inc"
+!/imperfectgamers-dev/store/store/inc/
+# but ignore everything under store/inc/
+/imperfectgamers-dev/store/store/inc/*/
+#but don't ignore "store/inc/classes"
+!imperfectgamers-dev/store/store/inc/classes/
+#but ignore everything under "store/inc/classes"
+/imperfectgamers-dev/store/store/inc/classes/*/
+#but don't ignore "imperfectgamers/store/inc/classes/dashboard.class.php"
+!/imperfectgamers-dev/store/inc/classes/dashboard.class.php/
