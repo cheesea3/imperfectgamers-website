@@ -43,20 +43,16 @@
                 <li class="nav-item <?php if ($CURRENT_PAGE == "Apply") {?>active<?php }?>">
                     <a class="nav-link" href="/apply">
                         Apply
-                        <?php if ($CURRENT_PAGE == "Apply") {?><span class="sr-only">(current)</span><?php }?>
-                    </a>
-                </li>
-
-                <li class="nav-item <?php if ($CURRENT_PAGE == "Store") {?>active<?php }?>">
-                    <a class="nav-link" href="/store">
-                        Store
                         <?php if ($CURRENT_PAGE == "Store") {?><span class="sr-only">(current)</span><?php }?>
                     </a>
                 </li>
 
             </ul>
             <ul class="nav justify-content-end">
-                <button type="button" class="btn btn-dark"><a href="/apply" style="text-decoration: none; color: white">Apply</a></button
+                <button type="button" class="btn btn-dark"><a href="/store" style="text-decoration: none; color: white">
+                        Store
+                        <?php if ($CURRENT_PAGE == "Store") {?><span class="sr-only">(current)</span><?php }?>
+                    </a></button
             </ul>
         </div>
     </div>
