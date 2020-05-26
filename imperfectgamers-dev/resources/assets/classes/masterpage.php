@@ -5,7 +5,6 @@ $path .= "/config/config.php";
 include_once($path);
 ?>
 
-
 <html lang="en">
 <head>
     <!--LIBRARIES-->

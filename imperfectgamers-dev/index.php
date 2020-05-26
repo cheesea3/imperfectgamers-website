@@ -30,14 +30,17 @@
                     <div class="right-bar d-flex align-items-center">
                         <nav class="d-flex align-items-center">
                             <ul class="main-menu align-items-center">
+                                <a href="https://imperfectgamers.org/forum/">Forum</a>
                                 <a href="https://imperfectgamers.org/bans/">Bans</a>
-                                <a href="https://imperfectgamers.org/apply/">Apply</a>
+                                <a href="https://imperfectgamers.org/shop/">Shop</a>
                             </ul>
                             <a href="https://imperfectgamers/#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
                         </nav>
                         <div class="header-social d-flex align-items-center">
+
                             <a href="https://instagram.com/imperfectgamers"><i class="fa fa-instagram"></i></a>
                             <a href="https://www.youtube.com/user/DanTheSir"><i class="fa fa-youtube"></i></a>
+							<a href="https://discord.com/invite/yb524Ax">Discord</a>
                         </div>
                     </div>
                 </div>
@@ -54,11 +57,11 @@
                     <object class="logo3d" data="https://cdn.imperfectgamers.org/inc/assets/svg/text.svg" height="30px"></object>
                     <hr>
                     <div class="logo3d"><?php include("resources/assets/svg/logo.svg"); ?></div>
-                    <a href="https://imperfectgamers.org/bans/" class="primary-btn banner-btn">Ban Center</a>
+                    <a href="https://imperfectgamers.org/forum" class="primary-btn banner-btn">Forums</a>
                     <h1></h1>
-                    <a href="https://steamcommunity.com/groups/ImperfectGamersRAP" class="primary-btn banner-btn">Steam Group</a>
+                    <a href="https://imperfectgamers.org/bans/" class="primary-btn banner-btn">Bans</a>
                     <h1></h1>
-                    <a href="https://discord.gg/yb524Ax" class="primary-btn banner-btn">Discord</a>
+                    <a href="https://imperfectgamers.org/shop/" class="primary-btn banner-btn">Shop</a>
                     <p></p>
                     <p></p>
                     <p></p>

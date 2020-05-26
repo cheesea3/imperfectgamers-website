@@ -40,6 +40,7 @@
                     </a>
                 </li>
 
+
                 <li class="nav-item <?php if ($CURRENT_PAGE == "Apply") {?>active<?php }?>">
                     <a class="nav-link" href="/apply">
                         Apply

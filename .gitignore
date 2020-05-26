@@ -6,17 +6,16 @@ imperfectgamers-dev/vendor
 /imperfectgamers-dev/bans/
 /imperfectgamers/root/bans/
 # Ignore everything under "Store"
-imperfectgamers-dev/store/*
+imperfectgamers-dev/shop/*
 #but don't ignore "imperfectgamers/store/index.php"
-!imperfectgamers-dev/store/index.php/
+!imperfectgamers-dev/shop/index.php/
 #but make sure config.php is ignored
-imperfectgamers-dev/store/config.php/
+imperfectgamers-dev/shop/config.php/
 # But don't ignore "store/inc"
-!imperfectgamers-dev/store/inc/
+!imperfectgamers-dev/shop/inc/
 # but ignore everything under store/inc/
-imperfectgamers-dev/store/inc/*/
+imperfectgamers-dev/shop/inc/*/
 #but don't ignore "store/inc/classes"
-!imperfectgamers-dev/store/inc/classes/
+!imperfectgamers-dev/shop/inc/classes/
 #but ignore everything under "store/inc/classes"
-imperfectgamers-dev/store/inc/classes/*/
-/imperfectgamers-dev/store/
+imperfectgamers-dev/shop/inc/classes/*/
