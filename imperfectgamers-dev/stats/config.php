@@ -65,7 +65,7 @@ function navbar() {
     //"path", "name", "fontawesome"
     $arr = array (
         array("/home/", "Home", "fas fa-home"),
-        array("/search/", "Search", "fa fa-search"),
+        array("/stats/", "Stats", "fa fa-search"),
         array("/forum/", "Forum", "fas fa-comments"),
         array("/bans/", "Bans", "fa fa-hammer"),
         array("/shop/", "Shop", "fa fa-store"),

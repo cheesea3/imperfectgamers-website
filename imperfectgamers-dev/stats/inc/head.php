@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
 
     <link rel="stylesheet" type="text/css" href="./assets/css/globalstyles.css">
-
+    <script src="https://cdn.imperfectgamers.org/inc/assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
     <script src="./assets/js/essential.js"></script>
 
     <script type="text/javascript">
