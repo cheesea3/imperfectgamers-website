@@ -3,7 +3,8 @@
 <head>
     <!-- Include required CSS and scripts -->
     <meta charset="utf-8">
-    <title>Imperfect Gamers - Home</title>
+    <title><?php print $PAGE_TITLE;?></title>
+
     <meta http-equiv="content-type" value="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 

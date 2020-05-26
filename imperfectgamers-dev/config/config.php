@@ -35,12 +35,19 @@ switch ($_SERVER["SCRIPT_NAME"]) {
         $META_DESC = "Page not found";
         $META_WORDS = "404, page not found, lost";
         break;
-    case "/apply/index.php":
-        $CURRENT_PAGE = "Apply";
+    case "/forum/index.php":
+        $CURRENT_PAGE = "Forum";
         $PAGE_TITLE = "Application Center";
         $INCLUDE_PATH = "/views/apply-view.php";
         $META_DESC = "The Application Center is for applying for staff and also applying for an unban, hopefully not in that order.";
         $META_WORDS = "banned, for, hardr, fbomb, help, micspam, banned, how to get unbanned, ipbanned, unban, appeal, information";
+        break;
+    case "/search/index.php":
+        $CURRENT_PAGE = "Search";
+        $PAGE_TITLE = "Search Center";
+        $INCLUDE_PATH = "/views/apply-view.php";
+        $META_DESC = "Search system.";
+        $META_WORDS = "Search";
         break;
     default:
         $CURRENT_PAGE = "Index";

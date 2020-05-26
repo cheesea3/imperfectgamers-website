@@ -19,3 +19,4 @@ imperfectgamers-dev/shop/inc/*/
 !imperfectgamers-dev/shop/inc/classes/
 #but ignore everything under "store/inc/classes"
 imperfectgamers-dev/shop/inc/classes/*/
+/imperfectgamers-dev/apply/
