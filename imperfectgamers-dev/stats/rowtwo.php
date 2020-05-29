@@ -1,7 +1,7 @@
 <div class="col-12">
     <div class="jumbotron bg-transparent justify-content-center text-center">
         <h3 class="text-center text-light">
-            Recent Purchases
+            Top players
         </h3>
     </div>
 
@@ -19,7 +19,7 @@ for ($i = 0; $i < 6; $i++)  {
             <div class=\"card-body text-light\">
 
                 <p class=\"card-text\">
-                    Package name
+                    Points
                 </p>
 
                 <a href=\"https://google.com\"><i class=\"fab fa-steam text-white fa-fw fa-2x\"></i></a>

@@ -38,8 +38,9 @@ $Next = $page + 1;
     <div class="container">
         <h1>Stats</h1>
         <div class="row">
-            <?php include('rowone.php') ?>
             <?php include('rowtwo.php') ?>
+            <?php include('rowone.php') ?>
+
         </div>
     </div>
 <?php include('inc/footer.php'); ?>

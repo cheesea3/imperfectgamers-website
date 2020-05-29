@@ -73,7 +73,7 @@ function navbar() {
     //for each array ($arr) pass it as value ($value)
 
 
-
+ 
 
     //$value[0] access first index, path
     //$value[2] accesses last index, fontawesome
