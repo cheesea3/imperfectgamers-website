@@ -1,3 +1,5 @@
+<?php require_once 'conn.php';?>
+<?php require_once 'process.php';?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +14,39 @@
 
 </head>
 <body>
-<?php require_once 'process.php';?>
+
+<div class="container">
+<div class="row justify-content-center">
+    <table>
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>Location</th>
+            <th colspan="2">Action</th>
+            </tr>
+        </thead>
+        <?php
+        while ($row = $result->fetch_assoc()): ?>
+        <tr>
+            <td><?php echo $row['name']; ?></td>
+            <td><?php echo $row['location']; ?></td>
+        </tr>
+        <?php endwhile; ?>
+    </table>
+</div>
+
+
+
+<?php
+pre_r($result->fetch_assoc());
+
+function pre_r( $array ) {
+echo '<pre>';
+    print_r($array);
+    echo '</pre>';
+}
+?>
+
 <div class="row justify-content-center">
 <form action="process.php" method="POST">
     <div class="form-group">
@@ -92,6 +126,6 @@
     </tr>
 </table>
 
-
-</bodY>
+</div>
+</body>
 </html>
