@@ -2,6 +2,8 @@
 imperfectgamers-dev/vendor
 /imperfectgamers-dev/bans/bansmodule/
 /imperfectgamers-dev/bans/
+/imperfectgamers-dev/stats/conn.php
+/imperfectgamers-dev/stats/conn.php/
 /imperfectgamers-dev/bans/demos/
 /imperfectgamers-dev/bans/
 /imperfectgamers/root/bans/
