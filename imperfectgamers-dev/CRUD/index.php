@@ -16,9 +16,11 @@
 </head>
 <body>
 <form action="" method="POST">
+    <label>Name</label>
     <input type="type" name="name" value="Enter your name">
+    <label>Location</label>
     <input type="text" name="location" value=""Enter your location">
-<button></button>
+<button type="submit" name="save">Save</button>
 </form>
 
 </form>
