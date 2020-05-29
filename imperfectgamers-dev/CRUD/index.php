@@ -56,6 +56,8 @@ unset($_SESSION['message']);
 
 
 <div class="row justify-content-center">
+
+    <input type="hidden" name="id" value="<?php echo $id ?>">
 <form action="process.php" method="POST">
     <div class="form-group">
     <label>Name</label>
@@ -75,6 +77,8 @@ unset($_SESSION['message']);
         <?php endif; ?>
     </div>
 </form>
+
+
 </div>
 
 
