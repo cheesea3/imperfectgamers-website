@@ -1,5 +1,7 @@
 <?php require_once 'conn.php';?>
 <?php require_once 'process.php';?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +16,15 @@
 
 </head>
 <body>
-
+<?php
+if (isset($_SESSION['message'])): ?>
+<div class="alert alert-<?=$_SESSION['msg_type']?>">
+<?php
+echo $_SESSION['message'];
+unset($_SESSION['message']);
+?>
+</div>
+<?php endif ?>
 <div class="container">
 <div class="row justify-content-center">
     <table>
@@ -30,6 +40,12 @@
         <tr>
             <td><?php echo $row['name']; ?></td>
             <td><?php echo $row['location']; ?></td>
+            <td>
+                <a href="index.php?edit=<?php echo $row['id']; ?>"
+                class="btn btn-info">Edit</a>
+                <a href="process.php?delete=<?php echo $row['id']; ?>"
+                   class="btn btn-danger">Delete</a>
+            </td>
         </tr>
         <?php endwhile; ?>
     </table>
@@ -37,28 +53,26 @@
 
 
 
-<?php
-pre_r($result->fetch_assoc());
 
-function pre_r( $array ) {
-echo '<pre>';
-    print_r($array);
-    echo '</pre>';
-}
-?>
 
 <div class="row justify-content-center">
 <form action="process.php" method="POST">
     <div class="form-group">
     <label>Name</label>
-    <input type="type" name="name" class="form-control" value="Enter your name">
+    <input type="type" name="name" class="form-control" value="<?php echo $name; ?>" placeholder="Enter your name">
     </div>
     <div class="form-group">
     <label>Location</label>
-    <input type="text" name="location" class="form-control" value="Enter your location">
+    <input type="text" name="location" value="<?php echo $location; ?>" class="form-control" placeholder="Enter your location">
     </div>
     <div class="form-group">
-    <button type="submit" class="btn btn-primary" name="save">Save</button>
+        <?php
+        if ($update == true):
+        ?>
+        <button type="submit" class="btn btn-info" name="update">Update</button>
+        <?php else: ?>
+            <button type="submit" class="btn btn-primary" name="save">Save</button>
+        <?php endif; ?>
     </div>
 </form>
 </div>
