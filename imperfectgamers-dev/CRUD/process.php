@@ -52,7 +52,7 @@ if (isset($_POST['update'])){
 
     $mysqli->query("UPDATE data SET name='$name', location='$location' WHERE id=$id") or die($mysqli->error);
 
-    $_SESSSION['message'] = "Records has been updated!";
+    $_SESSION['message'] = "Records has been updated!";
     $_SESSION['msg_type'] = "warning";
 
     header('location: index.php');
