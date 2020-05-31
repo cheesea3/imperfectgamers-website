@@ -57,6 +57,17 @@ isVip = (req, res, next) => {
     });
 };
 
+var domain = 'contoso.auth0.com';
+var clientID = 'DyG9nCwIEofSy66QM3oo5xU6NFs3TmvT';
+
+var lock = new Auth0Lock(clientID, domain);
+lock.show({
+    focusInput: false,
+    popup: true,
+}, function (err, profile, token) {
+    alert(err);
+});
+
 isAdmin = (req, res, next) => {
     User.findByPk(req.userId).then(user => {
         user.getRoles().then(roles => {
