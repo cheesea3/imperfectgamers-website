@@ -4,6 +4,14 @@ const cors = require("cors");
 
 const app = express();
 
+const db = require("./models");
+const Role = db.role;
+
+db.sequelize.sync({force: true}).then(() => {
+    console.log('Drop and Resync Db');
+    initial();
+});
+
 var corsOptions = {
     origin: "http://localhost:8081"
 };
@@ -26,3 +34,40 @@ const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`);
 });
+
+function initial() {
+    Role.create({
+        id: 1,
+        name: "user"
+    });
+
+    Role.create({
+        id: 5,
+        name: "vip"
+    });
+
+    Role.create({
+        id: 6,
+        name: "rapper"
+    });
+
+    Role.create({
+        id: 7,
+        name: "dj"
+    });
+
+    Role.create({
+        id: 4,
+        name: "admin"
+    });
+
+    Role.create({
+        id: 3,
+        name: "moderator"
+    });
+
+    Role.create({
+        id: 2,
+        name: "owner"
+    });
+}
