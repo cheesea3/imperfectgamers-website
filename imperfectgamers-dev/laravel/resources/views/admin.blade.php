@@ -17,6 +17,7 @@
                              @endforeach
                          </div>
                          <div class="col-sm-6">
+                             @if($user->id != Auth::user()->id)
                              @if($user->hasRole('admin'))
                                     <a class="btn btn-primary" href="/admin/remove-admin/{{$user->id}}">
                                     Remove Admin
@@ -25,6 +26,7 @@
                                  <a class="btn btn-primary" href="/admin/give-admin/{{$user->id}}">
                                      Give Admin
                                  </a>
+                             @endif
                              @endif
                          </div>
                      </div>
