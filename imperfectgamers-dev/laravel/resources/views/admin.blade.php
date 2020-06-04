@@ -5,16 +5,30 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Dashboard</div>
+                    <div class="card-header">Admin panel</div>
 
                     <div class="card-body">
-                        @if (session('status'))
-                            <div class="alert alert-success" role="alert">
-                                {{ session('status') }}
-                            </div>
-                        @endif
-
-                        You are in admin!
+                     @foreach($users as $user)
+                     <div class="row mb-4">
+                         <div class="col-sm-6">
+                             {{$user->name}}
+                             @foreach($user->roles as $role)
+                                 <small class="text-muted">{{$role->name}}</small>
+                             @endforeach
+                         </div>
+                         <div class="col-sm-6">
+                             @if($user->hasRole('admin'))
+                                    <a class="btn btn-primary" href="/admin/remove-admin/{{$user->id}}">
+                                    Remove Admin
+                                    </a>
+                                 @else
+                                 <a class="btn btn-primary" href="/admin/give-admin/{{$user->id}}">
+                                     Give Admin
+                                 </a>
+                             @endif
+                         </div>
+                     </div>
+                     @endforeach
                     </div>
                 </div>
             </div>
