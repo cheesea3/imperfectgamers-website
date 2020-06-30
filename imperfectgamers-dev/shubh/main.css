@@ -1,0 +1,46 @@
+body {
+    background-color: #0000cc;
+}
+
+
+header {
+    background-color: #FFFFFF;
+}
+
+
+body p {
+    color: #FFFFFF;
+}
+
+.beforefooter {
+    padding-top: 100px;
+}
+
+footer {
+    background-color: #FFFFFF;
+
+
+}
+
+
+svg {
+
+}
+
+svg #Layer_1_copy{
+    opacity: 100%;
+    transition: opacity 2s, transform 5s;
+    transform: translate(0px, 0px);
+    animation: mymove 5s infinite;
+}
+
+svg:hover #Layer_1_copy{
+    opacity: 0%;
+    transform: translate(100px, 200px);
+@keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+
+
+}

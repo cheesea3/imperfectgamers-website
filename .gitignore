@@ -24,3 +24,5 @@ imperfectgamers-dev/shop/inc/*/
 #but ignore everything under "store/inc/classes"
 imperfectgamers-dev/shop/inc/classes/*/
 /imperfectgamers-dev/apply/
+/imperfectgamers-dev/CRUDold/
+/imperfectgamers-dev/stats/
