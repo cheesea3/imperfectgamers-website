@@ -15,10 +15,12 @@
 <div class="row">
 <div class="col-3 sidebar">
     <h1>Search</h1>
+
 </div>
 
      <div class="col-9">
          <h1>Stats</h1>
+         <p>This page is currently in development and will be upgraded overtime. We thank you for your patience.</p>
      <table>
              <tr>
                  <th>Player</th>
