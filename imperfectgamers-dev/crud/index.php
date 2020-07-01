@@ -3,29 +3,7 @@
 ?>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-    * {
-        box-sizing: border-box;
-    }
-    .header {
-        border: 1px solid red;
-        padding: 15px;
-        text-align: center;
-    }
-    .main {
-        width: 75%;
-        float: left;
-        border: 1px solid red;
-        padding: 15px
-
-    }
-    .sidebar {
-        width: 25%;
-        float: left;
-        border: 1px solid red;
-        padding: 15px
-    }
-</style>
+<link rel="stylesheet" href="main.css">
 </head>
 
 
@@ -34,12 +12,12 @@
 <h1>Imperfect Gamers</h1>
 </div>
 
-
-<div class="sidebar">
+<div class="row">
+<div class="col-3 sidebar">
     <h1>Search</h1>
 </div>
 
-     <div class="main">
+     <div class="col-9">
          <h1>Stats</h1>
      <table>
              <tr>
@@ -54,6 +32,7 @@
              </tr>
          </table>
      </div>
+</div>
 </body>
 
 
