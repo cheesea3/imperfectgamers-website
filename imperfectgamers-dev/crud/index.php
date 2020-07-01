@@ -13,9 +13,16 @@
 </div>
 
 <div class="row">
-<div class="col-3 sidebar">
+<div class="col-3">
+    <div class="sidebar">
     <h1>Search</h1>
+        <label for="site-search">Search the site:</label>
+        <input type="search" id="site-search" name="q"
+               aria-label="Search for a player">
 
+        <button>Search</button>
+
+    </div>
 </div>
 
      <div class="col-9">
@@ -35,7 +42,15 @@
          </table>
      </div>
 </div>
+
+
+
+<div class="footer">
+    <p>imperfectgamers.org</p>
+</div>
 </body>
+
+
 
 
 
