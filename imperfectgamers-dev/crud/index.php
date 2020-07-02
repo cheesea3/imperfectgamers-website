@@ -1,5 +1,5 @@
 <html>
-<?php include_once ("conn.php");
+<?php include_once("dbclass.php");
 ?>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
