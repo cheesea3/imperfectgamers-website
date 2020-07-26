@@ -1,25 +1,8 @@
 <?php
-class DBClass {
+$database_username = 'root';
+$database_password = '';
+$pdo_conn = new PDO( 'mysql:host=127.0.0.1;dbname=igfastdl_surftimerg', $database_username, $database_password );
 
-    private $host = "localhost";
-    private $username = "root";
-    private $password = "";
-    private $database = "igfastdl_surftimerg";
 
-    public $connection;
 
-    // get the database connection
-    public function getConnection() {
-
-        $this->connection = null;
-
-        try {
-            $this->connection = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->database, $this->username, $this->password);
-            $this->connection->exec("set names utf8");
-        } catch (PDOException $exception) {
-            echo "Error: " . $exception->getMessage();
-        }
-
-        return $this->connection;
-    }
-}
+require_once("playerrank/read.php");

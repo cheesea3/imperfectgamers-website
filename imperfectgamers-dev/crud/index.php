@@ -1,5 +1,5 @@
 <html>
-<?php include_once("dbclass.php");
+<?php require_once("config/dbclass.php");
 ?>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,9 @@
 <div class="col-3">
     <div class="sidebar">
     <h1>Search</h1>
-        <label for="site-search">Search the site:</label>
+        <label for="search-player">Search player:</label>
+        <label for="search-desc">
+        </label>
         <input type="search" id="site-search" name="q"
                aria-label="Search for a player">
 
@@ -27,21 +29,67 @@
 
      <div class="col-9">
          <h1>Stats</h1>
-         <p>This page is currently in development and will be upgraded overtime. We thank you for your patience.</p>
-     <table>
+         <p>Top ten swaggy ppl</p>
+         <table class="tbl-qa">
+             <thead>
              <tr>
-                 <th>Player</th>
-                 <th>Joined</th>
-                 <th>Last Seen</th>
+                 <th class="table-header" width="20%">STEAM</th>
+                 <th class="table-header" width="40%">Name</th>
+                 <th class="table-header" width="20%">Rank</th>
+                 <th class="table-header" width="5%">Last seen</th>
              </tr>
-             <tr>
-                 <td>Jumpman</td>
-                 <td>6/29/2020</td>
-                 <td>6/30/2020</td>
-             </tr>
+             </thead>
+             <tbody id="table-body">
+             <?php
+             if(!empty($result)) {
+                 foreach($result as $row) {
+                     ?>
+                     <tr class="table-row">
+                         <td><?php echo $row["steamid"]; ?></td>
+                         <td><?php echo $row["name"]; ?></td>
+                         <td><?php echo $row["rank"]; ?></td>
+                         <td><?php echo date("Y-m-d", $row["lastseen"]); ?></td>
+                     </tr>
+                     <?php
+                 }
+             }
+             ?>
+             </tbody>
          </table>
      </div>
 </div>
+
+
+
+
+    <h1>titles</h1>
+    <p>alot of swaggy ppl with titles</p>
+    <table class="tbl-qa">
+        <thead>
+        <tr>
+            <th class="table-header" width="20%">STEAM</th>
+            <th class="table-header" width="40%">NAME</th>
+            <th class="table-header" width="40%">TITLE</th>
+        </tr>
+        </thead>
+        <tbody id="table-body">
+        <?php
+        if(!empty($stmt)) {
+            foreach($stmt as $row) {
+                ?>
+                <tr class="table-row">
+                    <td><?php echo $row["steamid"]; ?></td>
+                    <td><?php  EchoPlayerName($row["steamid"]); ?></td>
+                    <td><?php echo $row["title"]; ?></td>
+                </tr>
+                <?php
+            }
+        }
+        ?>
+        </tbody>
+    </table>
+</div>
+
 
 
 
